@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王靖慈 | 個人作品集與專案展示網</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;900&family=Playfair+Display:ital,wght@0,700;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. Navigation Bar (導覽列)
+       ========================================================================== -->
+  <header class="site-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <span>王靖慈 (Ching-Tzu Wang)</span>
+        <span class="nav-logo-badge">PORTFOLIO</span>
+      </a>
+
+      <button class="nav-mobile-toggle" aria-label="切換選單" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="nav-links">
+        <a href="#projects" class="nav-link active">專案展示 (Projects)</a>
+        <a href="#about" class="nav-link">關於我 (About)</a>
+        <a href="#contact" class="nav-link">聯絡資訊 (Contact)</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. Hero Section (自我介紹區)
+       ========================================================================== -->
+  <section class="section hero-section">
+    <div class="container hero-grid">
+      <!-- 簡介文字區 -->
+      <div class="hero-content">
+        <div class="hero-pill-badge">
+          <span class="indicator"></span>
+          <span>PORTFOLIO</span>
+        </div>
+
+        <h1 class="hero-title">
+          王靖慈 | 個人作品集與專案展示網
+        </h1>
+
+        <p class="hero-lead">
+          <!-- 自我介紹待補充 -->
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">瀏覽專案列表 ↓</a>
+        </div>
+      </div>
+
+      <!-- 復古資訊卡片 -->
+      <div class="hero-visual-card">
+        <div class="hero-card-header">
+          <span class="stamp">PROFILE</span>
+          <h2 class="role-title" style="margin-top: 0.75rem;">王靖慈 (Ching-Tzu Wang)</h2>
+        </div>
+
+        <p style="font-size: 0.95rem; line-height: 1.6;">
+          <!-- 個人簡介待補充 -->
+        </p>
+
+        <div class="hero-card-tags">
+          <!-- 標籤待補充 -->
+        </div>
+
+        <div class="hero-card-footer">
+          <p><!-- 引言待補充 --></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. Projects Showcase Section (專案動態篩選器與網格)
+       ========================================================================== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">PROJECTS</span>
+        <h2 class="section-title">專案作品展示</h2>
+        <p class="section-subtitle">
+          [請補充專案列表的說明文字，點選下方按鈕可依類別切換展示]
+        </p>
+      </div>
+
+      <!-- 篩選器 (Filter Bar) -->
+      <div class="filter-wrapper">
+        <nav class="filter-nav" aria-label="專案類別篩選">
+          <button class="filter-btn active" data-filter="all">
+            全部 (All) <span class="count">0</span>
+          </button>
+          <button class="filter-btn" data-filter="tech">
+            科技開發 (Tech) <span class="count">0</span>
+          </button>
+          <button class="filter-btn" data-filter="video">
+            影音製作 (Video) <span class="count">0</span>
+          </button>
+          <button class="filter-btn" data-filter="design">
+            平面設計 (Design) <span class="count">0</span>
+          </button>
+          <button class="filter-btn" data-filter="event">
+            活動企劃 (Event) <span class="count">0</span>
+          </button>
+          <button class="filter-btn" data-filter="research">
+            📑 學術研究 (Research) <span class="count">0</span>
+          </button>
+        </nav>
+        <div class="filter-info">
+          顯示中：全部 (All)
+        </div>
+      </div>
+
+      <!-- 專案網格 (Projects Grid) -->
+      <div class="projects-grid">
+        <!-- 
+          【專案卡片放置區】
+          當新增專案時，請依據以下卡片結構在此處插入新卡片，並確保具備對應的 data-category 屬性。
+        -->
+        <!-- TANET 2026 研討會論文專案 -->
+        <article class="project-card" data-category="research">
+          <div class="card-media">
+            <div class="card-media-placeholder bg-research">
+              <span>NIST SP 800-213 Rev. 1 初稿深度解析</span>
+              <small style="font-size: 0.8rem; font-weight: normal; opacity: 0.9;">TANET 2026 臺灣網際網路研討會 • 口頭報告</small>
+            </div>
+            <div class="card-media-badge">
+              <span class="badge badge-research">📑 RESEARCH / 學術研究</span>
+            </div>
+            <div class="card-media-timeline">2026.10</div>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-title">
+              <a href="projects/2026-10-tanet-nist-sp800-213r1.html">從裝置到產品：NIST SP 800-213 Rev. 1對物聯網資安、雲端安全與隱私、網路應用服務安全之意涵分析</a>
+            </h3>
+            <div class="card-role-meta">
+              <span>作者：王靖慈、謝文彬｜國立嘉義大學資訊工程系</span>
+            </div>
+            <p class="card-excerpt">
+              分析物聯網資安評估單位由「單一實體設備」擴展為「跨雲端與應用之完整系統」的核心典範轉移，解析四大核心組件分類、四種授權邊界放置方式與三大資安領域實務意涵。
+            </p>
+            <div class="card-tags">
+              <span class="card-tag-item">TANET 2026</span>
+              <span class="card-tag-item">NIST SP 800-213</span>
+              <span class="card-tag-item">物聯網資安</span>
+              <span class="card-tag-item">雲端安全 (FedRAMP)</span>
+              <span class="card-tag-item">零信任 (Zero Trust)</span>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <span class="stamp">🏆 Paper ID: 2026-O-0669</span>
+            <a href="projects/2026-10-tanet-nist-sp800-213r1.html" class="learn-more">
+              檢視論文簡介與簡報 →
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- 無符合專案之空狀態提示 (Empty State) -->
+      <div class="empty-state" style="display: none;">
+        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">此分類目前尚無專案</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">點擊下方按鈕可回到全部專案列表。</p>
+        <button class="btn btn-mustard" onclick="document.querySelector('.filter-btn[data-filter=\'all\']').click()">顯示全部作品</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. About Section (關於我)
+       ========================================================================== -->
+  <section id="about" class="section" style="background-color: var(--bg-secondary); border-top: var(--border-width-thick) solid var(--border-dark); border-bottom: var(--border-width-thick) solid var(--border-dark);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ABOUT</span>
+        <h2 class="section-title">關於我 (About Me)</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card-left">
+          <span class="stamp">PROFILE</span>
+          <h3 style="font-size: 1.5rem; line-height: 1.3;">
+            <!-- 理念或簡介待補充 -->
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.7;">
+            <!-- 個人經歷待補充 -->
+          </p>
+        </div>
+
+        <div class="about-card-right">
+          <div class="skill-matrix-card">
+            <h4 class="skill-matrix-title">專業技能清單 (Skills)</h4>
+            <div class="skill-pill-list">
+              <!-- 技能標籤待補充 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. Contact Section (聯絡資訊)
+       ========================================================================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-box">
+        <div>
+          <span class="section-tag" style="background-color: var(--bg-card);">CONTACT</span>
+          <h2 style="font-size: clamp(2rem, 4vw, 2.8rem); margin: 1rem 0; font-weight: 800;">
+            聯絡資訊 (Contact)
+          </h2>
+          <p style="font-size: 1.15rem; line-height: 1.6; max-width: 540px;">
+            <!-- 聯絡說明待補充 -->
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <!-- 聯絡方式待補充 -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. Footer (頁尾)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        王靖慈 (Ching-Tzu Wang)
+      </div>
+      <div class="footer-meta">
+        © 2026 王靖慈. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- 回到頂端按鈕 -->
+  <button class="back-to-top" aria-label="回到頁面頂端">↑</button>
+
+  <!-- 核心腳本 -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

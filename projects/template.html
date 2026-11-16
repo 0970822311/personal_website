@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[專案名稱] | 專案詳情</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-nav">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-logo">
+        <span>[您的姓名 / LOGO]</span>
+        <span class="nav-logo-badge">PORTFOLIO</span>
+      </a>
+      <a href="../index.html#projects" class="btn btn-sm btn-mustard">
+        ← 回到作品庫 (Back to Works)
+      </a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="路徑導覽">
+        <a href="../index.html">首頁</a>
+        <span>/</span>
+        <a href="../index.html#projects">作品庫</a>
+        <span>/</span>
+        <span style="font-weight: 800;">[專案類別]</span>
+      </nav>
+
+      <!-- ======================================================================
+           A. 共通資訊區塊 (Header / Meta Data)
+           ====================================================================== -->
+      <!-- Project Info Start -->
+      <header class="project-header">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem;">
+          <span class="badge">[專案類別標籤，例如：badge-tech / badge-video / badge-design / badge-event]</span>
+          <span class="stamp">[狀態/標記]</span>
+        </div>
+
+        <h1 class="project-title">
+          [專案名稱 Project Name]
+        </h1>
+
+        <!-- Meta Data Grid -->
+        <div class="meta-info-grid">
+          <div class="meta-info-item">
+            <span class="meta-info-label">專案時程 (Timeline)</span>
+            <span class="meta-info-value">[請補充專案時程，格式：YYYY.MM]</span>
+          </div>
+          <div class="meta-info-item">
+            <span class="meta-info-label">我的角色 (My Role)</span>
+            <span class="meta-info-value">[請補充具體貢獻與擔任角色]</span>
+          </div>
+          <div class="meta-info-item">
+            <span class="meta-info-label">專案類別 (Category)</span>
+            <span class="meta-info-value">[請補充專案類別]</span>
+          </div>
+          <div class="meta-info-item">
+            <span class="meta-info-label">專案狀態 (Status)</span>
+            <span class="meta-info-value">[請補充專案目前狀態]</span>
+          </div>
+        </div>
+
+        <!-- Purpose & Target Audience -->
+        <div class="purpose-box">
+          <h4>🎯 專案目的與受眾 (Purpose &amp; Target Audience)</h4>
+          <p style="margin-bottom: 0.5rem; line-height: 1.6;">
+            <strong>專案目的：</strong>[請補充專案目的 - 簡潔的 1~2 段話說明發起緣由與解決的核心問題]
+          </p>
+          <p style="line-height: 1.6;">
+            <strong>目標受眾：</strong>[請補充目標受眾 - 描述這項作品主要服務的族群]
+          </p>
+        </div>
+
+        <!-- Events & Awards -->
+        <div style="margin-top: 1.5rem;">
+          <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem;">🏆 參與活動或獲獎紀錄 (Events &amp; Awards)</h4>
+          <div class="awards-list">
+            <div class="award-item">
+              <span class="award-badge-icon">★</span>
+              <div>
+                <strong>[請補充投遞的比賽、參與的活動或獲獎紀錄]</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Project Info End -->
+
+
+      <!-- ======================================================================
+           B. 動態擴充資訊區塊 (Dynamic Content Render)
+           說明：請根據專案類型保留對應區塊，並移除不適用的區塊
+           ====================================================================== -->
+
+      <!-- 【若為 程式/技術類 (Tech)】 -->
+      <!-- Dynamic Content Tech Start -->
+      <section class="detail-section-block">
+        <h2 class="detail-block-title">
+          <span>⚡</span> 技術架構與技術棧 (Tech Stack)
+        </h2>
+        <div class="tech-stack-container">
+          <span class="tech-tag">[技術/工具 1]</span>
+          <span class="tech-tag">[技術/工具 2]</span>
+          <span class="tech-tag">[技術/工具 3]</span>
+        </div>
+        <div class="tech-actions">
+          <a href="[GitHub 網址]" target="_blank" rel="noopener noreferrer" class="btn btn-navy">
+            🐙 GitHub 程式碼倉庫
+          </a>
+          <a href="[Demo 網址]" target="_blank" rel="noopener noreferrer" class="btn btn-mustard">
+            🚀 線上展示 (Live Demo)
+          </a>
+        </div>
+      </section>
+      <!-- Dynamic Content Tech End -->
+
+      <!-- 【若為 影音類 (Video)】 -->
+      <!-- Dynamic Content Video Start -->
+      <section class="detail-section-block">
+        <h2 class="detail-block-title">
+          <span>📼</span> 影音播放器 (Video Player)
+        </h2>
+        <div class="video-embed-container">
+          <!-- 嵌入 YouTube / Vimeo 播放器 -->
+          <iframe 
+            src="https://www.youtube-nocookie.com/embed/[請填寫影片ID]" 
+            title="[影片名稱]" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div style="margin-top: 1.5rem;">
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">使用剪輯軟體與器材：</h3>
+          <div class="video-tools-list">
+            <span class="video-tool-badge">[軟體/工具 1]</span>
+            <span class="video-tool-badge">[軟體/工具 2]</span>
+          </div>
+        </div>
+      </section>
+      <!-- Dynamic Content Video End -->
+
+      <!-- 【若為 平面/UI設計類 (Design)】 -->
+      <!-- Dynamic Content Design Start -->
+      <section class="detail-section-block">
+        <h2 class="detail-block-title">
+          <span>🖼️</span> 視覺作品展示 (Design Gallery / Masonry)
+        </h2>
+        <div class="design-gallery">
+          <div class="gallery-item">
+            <div style="height: 200px; background-color: var(--bg-secondary); display: flex; align-items: center; justify-content: center; font-weight: 700;">
+              [圖片預覽區域 1]
+            </div>
+            <div class="gallery-caption">[圖片說明文字 1]</div>
+          </div>
+          <div class="gallery-item">
+            <div style="height: 200px; background-color: var(--bg-secondary); display: flex; align-items: center; justify-content: center; font-weight: 700;">
+              [圖片預覽區域 2]
+            </div>
+            <div class="gallery-caption">[圖片說明文字 2]</div>
+          </div>
+        </div>
+      </section>
+      <!-- Dynamic Content Design End -->
+
+      <!-- 【若為 活動/企劃類 (Event)】 -->
+      <!-- Dynamic Content Event Start -->
+      <section class="detail-section-block">
+        <h2 class="detail-block-title">
+          <span>📊</span> 活動成效指標 (Metrics)
+        </h2>
+        <div class="metrics-row">
+          <div class="metric-card">
+            <div class="metric-number">[數據 1]</div>
+            <div class="metric-label">[指標項目 1]</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">[數據 2]</div>
+            <div class="metric-label">[指標項目 2]</div>
+          </div>
+        </div>
+        <div style="margin: 2rem 0;">
+          <a href="../assets/docs/[專案名稱]-proposal.pdf" download class="btn btn-olive">
+            📥 下載企劃書 PDF
+          </a>
+        </div>
+      </section>
+      <!-- Dynamic Content Event End -->
+
+
+      <!-- ======================================================================
+           C. 遇到的困難與解決方法 (Challenges & Solutions)
+           ====================================================================== -->
+      <!-- Challenges & Solutions Start -->
+      <section class="detail-section-block">
+        <h2 class="detail-block-title">
+          <span>🛠️</span> 遇到的困難與解決方法 (Challenges &amp; Solutions)
+        </h2>
+
+        <div class="challenges-grid">
+          <div class="challenge-card">
+            <h4>❌ 遇到的困難 / 瓶頸</h4>
+            <p style="line-height: 1.6; font-size: 0.95rem;">
+              [請描述遭遇的難題、資源限制或執行挑戰]
+            </p>
+          </div>
+          <div class="solution-card">
+            <h4>✅ 採取的解決方針</h4>
+            <p style="line-height: 1.6; font-size: 0.95rem;">
+              [請說明採取的應對方法、技術解方或執行策略]
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Challenges & Solutions End -->
+
+      <!-- Bottom Navigation -->
+      <div style="margin-top: 3rem; display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 2px dashed var(--border-dark);">
+        <a href="../index.html#projects" class="btn btn-mustard">← 回到作品庫總覽</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">[您的姓名 / 作品集名稱]</div>
+      <div class="footer-meta">© [年份] [您的姓名]. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
